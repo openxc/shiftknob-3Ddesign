@@ -1,0 +1,11 @@
+target
+bin
+gen
+.DS_Store
+reference
+/com/
+*.asc
+.settings
+.project
+.classpath
+.CAT*
