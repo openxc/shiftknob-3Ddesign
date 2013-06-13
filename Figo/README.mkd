@@ -1,0 +1,16 @@
+Figo Shift Knob
+=================
+
+## 3D Printing and Assembly
+
+The current 3D models for the Figo Shift Knob use machine screws and 
+inserts sourced from [McMaster-Carr](http://mcmaster.com). Refer to the 
+[Components](https://github.com/openxc/shiftknob-3Ddesign/tree/master/Components)
+folder for `.STL` and `STEP` files for the screws and inserts.
+
+**Machine Screws:**
+
+M2 x .4 mm thread, 20 mm length  - [McMaster Link](http://www.mcmaster.com/#91800A022)
+**Heat-Set Inserts:**
+
+M2 x 0.4 - [McMaster Link](http://www.mcmaster.com/#94180A312)
