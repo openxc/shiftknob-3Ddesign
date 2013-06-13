@@ -21,3 +21,7 @@ M2.5 x 0.45 - [McMaster Link](http://www.mcmaster.com/#94180A323)
 This Shift Knob housing design has been thoroughly tested on the Focus ST.
 It will also fit the Fiesta ST and manual transmission Fusion. It should
 also fit on the Mustang, but has not yet been tested.
+
+To see photos of the 3D printed shift knob please refer to the 
+Shift Knob project page on [openxcplatform.com]
+(http://openxcplatform.com/projects/shift-knob.html)
