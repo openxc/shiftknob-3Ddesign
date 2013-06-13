@@ -1,17 +1,24 @@
 OpenXC Shift Knob
 =================
 
-**ABOUT:** The Haptic Feedback Shift Knob is a manual transmission shift knob capable of sending haptic and 
-visual signals to the driver. Using a built in algorithm, the Shift Knob determines when the driver 
-should shift for best performance and then sends an appropriate haptic pulse through the driver's 
-hand signalling that he or she should shift. 
+**ABOUT:** The Haptic Feedback Shift Knob is a manual transmission shift knob
+capable of sending haptic and visual signals to the driver. Using a built in
+algorithm, the Shift Knob determines when the driver should shift for best
+performance and then sends an appropriate haptic pulse through the driver's hand
+signalling that he or she should shift.
 
-For more details on the complete project, visit the [OpenXC Shift Knob]
-(http://openxcplatform.com/projects/shift-knob.html) webpage. 
+For more details on the complete project, visit the [OpenXC Shift
+Knob](http://openxcplatform.com/projects/shift-knob.html) webpage.
 
 ## Design Intent
 
-The manual transmission shift knob is a relatively plain component in most of today's vehicles. They come in all shapes and sizes and are sold all across the globe. The motivation behind the OpenXC Shift Knob was to take this simple component and redesign the housings such that an embedded system (PCBs and connections) could fit inside. At the same time, the Shift Knob needed to be sized and designed such that it fit existing vehicles and remain ergonomically friendly.
+The manual transmission shift knob is a relatively plain component in most of
+today's vehicles. They come in all shapes and sizes and are sold all across the
+globe. The motivation behind the OpenXC Shift Knob was to take this simple
+component and redesign the housings such that an embedded system (PCBs and
+connections) could fit inside. At the same time, the Shift Knob needed to be
+sized and designed such that it fit existing vehicles and remain ergonomically
+friendly.
 
 ## Parts
 
@@ -25,64 +32,114 @@ In it's current design, the Shift Knob is composed of:
 
 ## Motors
 
-The designs in this repository use 2 different motors. The first motor is a [10,000 RPM Toy Motor][] sold on Amazon. This motor is quite small and capable of sending an easily detectable "pulse" when connected to a 5V DC source and attached to a gear shift lever. The second motor is an [XBox 360 Motor][] from a controller. This motor also sends an easily detectable "pulse" when connected to a 5V DC source and attached to a gear shift lever, but it is much larger than the toy motor. The main differences, other than size, between the two motors is the frequency and magnitude with which they vibrate. The XBox controller motor send a low frequency, high magnitude vibration, whereas the toy motor send a high frequency, low magnitude vibration.
+The designs in this repository use 2 different motors. The first motor is a
+[10,000 RPM Toy Motor][] sold on Amazon. This motor is quite small and capable
+of sending an easily detectable "pulse" when connected to a 5V DC source and
+attached to a gear shift lever. The second motor is an [XBox 360 Motor][] from a
+controller. This motor also sends an easily detectable "pulse" when connected to
+a 5V DC source and attached to a gear shift lever, but it is much larger than
+the toy motor. The main differences, other than size, between the two motors is
+the frequency and magnitude with which they vibrate. The XBox controller motor
+send a low frequency, high magnitude vibration, whereas the toy motor send a
+high frequency, low magnitude vibration.
 
 ## 3D Printing and Assembly
 
-The current designs in the folders above can easily be printed with an a desktop 3D printer. They were designed with the intent that developers and hobbyists could download the file and print them off at home. In order to assembly the housings, there are a few additional bolts and inserts needed. Each model in the folders above also has details about the specific bolts and inserts needed for assembly. They can be found at McMaster.
+The current designs in the folders above can easily be printed with an a desktop
+3D printer. They were designed with the intent that developers and hobbyists
+could download the file and print them off at home. In order to assembly the
+housings, there are a few additional bolts and inserts needed. Each model in the
+folders above also has details about the specific bolts and inserts needed for
+assembly. They can be found at McMaster.
 
 ## Designing & Modifying Your Own
 
-The housings files in this repository are simply examples and guides for you to create your own shift knob. The 3D CAD files for the components can be used as a base for many more designs. If you want to create your own, be sure to keep to a few guidelines:
+The housings files in this repository are simply examples and guides for you to
+create your own shift knob. The 3D CAD files for the components can be used as a
+base for many more designs. If you want to create your own, be sure to keep to a
+few guidelines:
 
-1. Design for Manufacturing 
- * It is recommended to keep a minimum wall thickness of around 2.5mm in order for designs to be printed on at-home 3D printers
- * If two parts are coming together or in contact with one another, be sure to allow 0.25mm of clearance. If you want a press fit, then zero clearance will be better.
- * Be sure to consider the tolerances on your own 3D printer (if you're using your own). Do-it-yourself 3D printers may not have the accuracy/precision need to make complex geometries especially for interfaces between multiple components. Be ready for some trial and error.
+1. Design for Manufacturing
+ * It is recommended to keep a minimum wall thickness of around 2.5mm in order
+   for designs to be printed on at-home 3D printers
+ * If two parts are coming together or in contact with one another, be sure to
+   allow 0.25mm of clearance. If you want a press fit, then zero clearance will
+   be better.
+ * Be sure to consider the tolerances on your own 3D printer (if you're using
+   your own). Do-it-yourself 3D printers may not have the accuracy/precision
+   need to make complex geometries especially for interfaces between multiple
+   components. Be ready for some trial and error.
 1. Ergonomics
- * Based on the various shift knobs tested, most have about a 55mm or less diameter. Any thing significantly larger than this may not be comfortable for the driver.
- * The haptic feedback shift knob is designed to provide a *tactile* pulse for the driver, not an auditory signal (that comes from the Android device). Be sure to design your parts such that they don't rattle or fall apart under normal operation. This might require a tighter fit around the electronics and careful placement of the wires attaching the motor to the PCB.
+ * Based on the various shift knobs tested, most have about a 55mm or less
+   diameter. Any thing significantly larger than this may not be comfortable for
+   the driver.
+ * The haptic feedback shift knob is designed to provide a *tactile* pulse for
+   the driver, not an auditory signal (that comes from the Android device). Be
+   sure to design your parts such that they don't rattle or fall apart under
+   normal operation. This might require a tighter fit around the electronics and
+   careful placement of the wires attaching the motor to the PCB.
 
 ## Connection to a Vehicle
 
 ### Threaded Attachment
 
-Nearly all manual transmission shift knobs are installed by screwing the shift knob onto a threaded rod. This threaded rod, or shift lever, is attached to the transmission via cables and/or linkages. All current Ford vehicles tested thus far use an M12 x 1.25 tapped thread. The shift knob housings are designed with a 10.8mm diameter hole that is about 30mm deep. This hole can then be tapped with an M12x1.25 tap. You can check out this [website] to see what thread dimensions might be required for your vehicle.
+Nearly all manual transmission shift knobs are installed by screwing the shift
+knob onto a threaded rod. This threaded rod, or shift lever, is attached to the
+transmission via cables and/or linkages. All current Ford vehicles tested thus
+far use an M12 x 1.25 tapped thread. The shift knob housings are designed with a
+10.8mm diameter hole that is about 30mm deep. This hole can then be tapped with
+an M12x1.25 tap. You can check out this [website] to see what thread dimensions
+might be required for your vehicle.
 
 ### Reverse Lockout
 
-Certain vehicles, such as the manual transmission 2013 Focus, Fiesta, and Fusion have a "reverse lockout" which requires that the driver lift up a mechanism before the gear lever to go able to go into reverse. A new shift knob housing must be designed such that the reverse lockout mechanism can still work properly. This can been seen in the [Focus ST](/focusST/) folder above.
+Certain vehicles, such as the manual transmission 2013 Focus, Fiesta, and Fusion
+have a "reverse lockout" which requires that the driver lift up a mechanism
+before the gear lever to go able to go into reverse. A new shift knob housing
+must be designed such that the reverse lockout mechanism can still work
+properly. This can been seen in the [Focus ST](/focusST/) folder above.
 
 ### USB Connection
 
-The Shift Knob hardware currently requires a USB cable for data communication. The housings have been designed with a port that is large enough to fit a USB mini cable. In the Figo design above, this cable can be carefully concealed under the shift knob boot. The Focus ST design has a USB port which comes out the front of the Shift Knob.
+The Shift Knob hardware currently requires a USB cable for data communication.
+The housings have been designed with a port that is large enough to fit a USB
+mini cable. In the Figo design above, this cable can be carefully concealed
+under the shift knob boot. The Focus ST design has a USB port which comes out
+the front of the Shift Knob.
 
 ## Resources
 
 This repository is one of 4 repositories listed below:
 
-**3D Design** - The [shiftknob-3Ddesign](http://github.com/openxc/shiftknob-3Ddesign) 
-repository contains .STL and STEP files for the 3D printable shift knob housings as well as documentation
-for creating your own physical shift knob design that works with the PCBs already designed.
+**3D Design** - The
+[shiftknob-3Ddesign](http://github.com/openxc/shiftknob-3Ddesign) repository
+contains .STL and STEP files for the 3D printable shift knob housings as well as
+documentation for creating your own physical shift knob design that works with
+the PCBs already designed.
 
-**Hardware** - The [shiftknob-hardware](http://github.com/openxc/shiftknob-hardware) 
-repository contains Eagle schematics and PCB layouts for the shift knob embedded hardware.
+**Hardware** - The
+[shiftknob-hardware](http://github.com/openxc/shiftknob-hardware)
+repository contains Eagle schematics and PCB layouts for the shift knob embedded
+hardware.
 
-**Firmware** - The [shiftknob-firmware](http://github.com/openxc/shiftknob-firmware) 
-repository contains Arduino source code to run on the embedded system as well as other firmware 
-versions for differing applications. 
+**Firmware** - The
+[shiftknob-firmware](http://github.com/openxc/shiftknob-firmware) repository
+contains Arduino source code to run on the embedded system as well as other
+firmware versions for differing applications.
 
-**Android** - The [shiftknob-android](http://github.com/openxc/shiftknob-android) 
-repository contains the Android application to run on the OpenXC host device. This app sends the
-appropriate signals to the Shift Knob embedded system.
+**Android** - The
+[shiftknob-android](http://github.com/openxc/shiftknob-android) repository
+contains the Android application to run on the OpenXC host device. This app
+sends the appropriate signals to the Shift Knob embedded system.
 
 ## License
 
 The Android and firmware source code is available under the BSD open source
 license.
 
-The hardware schematics and enclosure design are available under the 
-[Creative Commons Atribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US) license.
+The hardware schematics and enclosure design are available under the [Creative
+Commons Atribution 3.0
+Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US) license.
 
 [10,000 RPM Toy Motor]: http://www.amazon.com/0-04A-10000RPM-Vibrator-Vibration-Motor/dp/B005G0NQEG/
 [XBox 360 Motor]: http://www.instructables.com/id/How-To-Disassemble-an-Xbox-360-Wireless-Controller/step15/Remove-The-Rumble-Packs/
