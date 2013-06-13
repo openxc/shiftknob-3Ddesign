@@ -45,12 +45,13 @@ high frequency, low magnitude vibration.
 
 ## 3D Printing and Assembly
 
-The current designs in the folders above can easily be printed with a desktop 3D
-printer. They were designed with the intent that developers and hobbyists could
-download the file and print them off at home. In order to assembly the housings,
-there are a few additional bolts and inserts needed. Each model in the folders
-above also has details about the specific bolts and inserts needed for assembly.
-They can be found at McMaster.
+The designs in this repository can be printed with a desktop 3D printer. They
+were designed with the intent that developers and hobbyists could download the
+file and print them off at home. In order to assembly the housings, there are a
+few additional bolts and inserts needed. Different vehicles have different
+physical requirements for the shift knob, and each model-specific folder in this
+repository has details about the specific bolts and inserts needed for
+assembly - they can all be found at [McMaster-Carr](http://www.mcmaster.com/).
 
 ## Designing & Modifying Your Own
 
@@ -59,25 +60,28 @@ create your own shift knob. The 3D CAD files for the components can be used as a
 base for many more designs. If you want to create your own, be sure to keep to a
 few guidelines:
 
-1. Design for Manufacturing
- * It is recommended to keep a minimum wall thickness of around 2.5mm in order
-   for designs to be printed on at-home 3D printers
- * If two parts are coming together or in contact with one another, be sure to
-   allow 0.25mm of clearance. If you want a press fit, then zero clearance will
-   be better.
- * Be sure to consider the tolerances on your own 3D printer (if you're using
-   your own). Do-it-yourself 3D printers may not have the accuracy/precision
-   need to make complex geometries especially for interfaces between multiple
-   components. Be ready for some trial and error.
-1. Ergonomics
- * Based on the various shift knobs tested, most have about a 55mm or less
-   diameter. Any thing significantly larger than this may not be comfortable for
-   the driver.
- * The haptic feedback shift knob is designed to provide a *tactile* pulse for
-   the driver, not an auditory signal (that comes from the Android device). Be
-   sure to design your parts such that they don't rattle or fall apart under
-   normal operation. This might require a tighter fit around the electronics and
-   careful placement of the wires attaching the motor to the PCB.
+**Design for Manufacturing**
+
+* We recommend a a minimum wall thickness of 2.5mm in order for designs to be
+  printed on at-home 3D printers
+* If two parts are coming together or in contact with one another, be sure to
+  allow 0.25mm of clearance. If you want a press fit, then zero clearance will
+  be better.
+* Be sure to consider the tolerances on your own 3D printer (if you're using
+  your own). Do-it-yourself 3D printers may not have the accuracy/precision need
+  to make complex geometries especially for interfaces between multiple
+  components. Be ready for some trial and error.
+
+**Ergonomics**
+
+* Based on the various shift knobs tested, most have about a 55mm or less
+  diameter. Any thing significantly larger than this may not be comfortable for
+  the driver.
+* The haptic feedback shift knob is designed to provide a *tactile* pulse for
+  the driver, not an auditory signal (that comes from the Android device). Be
+  sure to design your parts such that they don't rattle or fall apart under
+  normal operation. This might require a tighter fit around the electronics and
+  careful placement of the wires attaching the motor to the PCB.
 
 ## Connection to a Vehicle
 
@@ -88,8 +92,8 @@ knob onto a threaded rod. This threaded rod, or shift lever, is attached to the
 transmission via cables and/or linkages. All current Ford vehicles tested thus
 far use an M12 x 1.25 tapped thread. The shift knob housings are designed with a
 10.8mm diameter hole that is about 30mm deep. This hole can then be tapped with
-an M12x1.25 tap. You can check out this [website][] to see what thread dimensions
-might be required for your vehicle.
+an M12x1.25 tap. You can check out this [website](TODO) to see what thread
+dimensions might be required for your vehicle.
 
 ### Reverse Lockout
 
@@ -98,16 +102,15 @@ have a "reverse lockout" which requires that the driver lift up a mechanism
 before the gear lever to go able to go into reverse. A new shift knob housing
 must be designed such that the reverse lockout mechanism can still work
 properly. This can been seen in the [Focus
-ST](https://github.com/openxc/shiftknob-3Ddesign/tree/master/FocusST) folder
-above.
+ST](https://github.com/openxc/shiftknob-3Ddesign/tree/master/FocusST) folder.
 
 ### USB Connection
 
 The Shift Knob hardware currently requires a USB cable for data communication.
 The housings have been designed with a port that is large enough to fit a USB
-mini cable. In the Figo design above, this cable can be carefully concealed
-under the shift knob boot. The Focus ST design has a USB port which comes out
-the front of the Shift Knob.
+mini cable. In the Figo design, this cable can be carefully concealed under the
+shift knob boot. The Focus ST design has a USB port which comes out the front of
+the Shift Knob.
 
 ## Resources
 
@@ -136,12 +139,9 @@ sends the appropriate signals to the Shift Knob embedded system.
 
 ## License
 
-The Android and firmware source code is available under the BSD open source
+The designs in this repository are available under the [Creative Commons
+Atribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US)
 license.
-
-The hardware schematics and enclosure design are available under the [Creative
-Commons Atribution 3.0
-Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US) license.
 
 [10,000 RPM Toy Motor]: http://www.amazon.com/0-04A-10000RPM-Vibrator-Vibration-Motor/dp/B005G0NQEG/
 [XBox 360 Motor]: http://www.instructables.com/id/How-To-Disassemble-an-Xbox-360-Wireless-Controller/step15/Remove-The-Rumble-Packs/
