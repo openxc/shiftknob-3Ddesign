@@ -92,8 +92,9 @@ knob onto a threaded rod. This threaded rod, or shift lever, is attached to the
 transmission via cables and/or linkages. All current Ford vehicles tested thus
 far use an M12 x 1.25 tapped thread. The shift knob housings are designed with a
 10.8mm diameter hole that is about 30mm deep. This hole can then be tapped with
-an M12x1.25 tap. You can check out this [website](TODO) to see what thread
-dimensions might be required for your vehicle.
+an M12x1.25 tap. You can check out this [website]
+(https://www.speeddawg.com/shifter-thread-sizes) to see what thread dimensions 
+might be required for your vehicle.
 
 ### Reverse Lockout
 
