@@ -11,6 +11,7 @@ folder for `.STL` and `STEP` files for the screws and inserts.
 **Machine Screws:**
 
 M2 x .4 mm thread, 20 mm length  - [McMaster Link](http://www.mcmaster.com/#91800A022)
+
 **Heat-Set Inserts:**
 
 M2 x 0.4 - [McMaster Link](http://www.mcmaster.com/#94180A312)
